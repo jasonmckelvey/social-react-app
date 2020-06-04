@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 
 // components
-import Container from "./Container";
+import Page from "./Page";
 
 function About() {
   return (
-    <Container>
+    <Page title="Terms and Conditions">
       <h2>Our Terms &amp; Conditions</h2>
       <p className="lead text-muted">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
@@ -34,7 +34,7 @@ function About() {
         nisi sed harum laborum, nemo odio animi officia quisquam. Veniam, natus
         reprehenderit.
       </p>
-    </Container>
+    </Page>
   );
 }
 
