@@ -1,13 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+// components
+import Header from "./components/Header";
+import HomeGuest from "./components/HomeGuest";
+import Footer from "./components/Footer";
+
 function ExampleComponent() {
   return (
-    <div>
-      <h1>Hey app</h1>
-      <p>our app</p>
-    </div>
+    <>
+      <Header />
+      <HomeGuest />
+      <Footer />
+    </>
   );
 }
 
 ReactDOM.render(<ExampleComponent />, document.querySelector("#app"));
+
+if (module.hot) {
+  module.hot.accept();
+}
